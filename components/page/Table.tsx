@@ -12,7 +12,7 @@ import {
 import Edit from '@/components/molecules/Edit'
 
 import { db } from '@/lib/firebase'
-import { doc, collection, setDoc, updateDoc, deleteDoc, getDoc, onSnapshot, getDocs } from 'firebase/firestore'
+import { doc, collection, updateDoc, deleteDoc, getDocs } from 'firebase/firestore'
 import { Todo } from '@/types/todo'
 
 const columns: ColumnsType<Todo> = [

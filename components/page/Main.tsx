@@ -22,7 +22,7 @@ const Main: React.FC = () => {
     <>
     <Space direction="vertical" size="large" style={{ width: "100%" }}>
       <div className="form-wrap">
-        <Form onSubmit={addTodo}/>
+        <Form onSubmit={addTodo} todo={null} />
       </div>
       <Table />
     </Space>
