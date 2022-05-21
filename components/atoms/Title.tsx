@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Title: React.FC = ({ children }) => {
+type Props = {
+  children: ReactNode
+}
+
+const Title: React.FC<Props> = ({ children }) => {
   return (
     <>
       <div className="ttl-wrap">

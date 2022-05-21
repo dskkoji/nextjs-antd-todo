@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import { Layout as AntdLayout } from 'antd'
 
-const Layout: React.FC = ({ children }) => {
+type Props = {
+  children: ReactNode
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <AntdLayout style={{ minHeight: '100vh' }}>
